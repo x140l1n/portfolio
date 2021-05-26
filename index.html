@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js oldie ie8" lang="en"> <![endif]-->
+<!--[if IE 9]><html class="no-js oldie ie9" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html class="no-js" lang="es">
+<!--<![endif]-->
+
+<head>
+  <!--- basic page needs
+   ================================================== -->
+  <meta charset="utf-8" />
+  <title>x140l1n</title>
+  <meta name="description" content="Projects" />
+  <meta name="author" content="x140l1n" />
+
+  <!-- mobile specific metas
+   ================================================== -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+  <!-- CSS
+   ================================================== -->
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/vendor.css" />
+  <link rel="stylesheet" href="css/custom.css" />
+
+  <!-- script
+   ================================================== -->
+  <script src="js/modernizr.js"></script>
+  <!--<script src="js/pace.min.js"></script>-->
+
+  <!-- favicons
+	================================================== -->
+  <link rel="icon" type="image/ico" href="favicon.ico" />
+</head>
+
+<body id="top" class="none-scroll">
+
+  <div class="splash">
+    <h1 class="splash-line anim-typewriter">{ x 1 4 0 l 1 n }</h1>
+  </div>
+
+  <!-- header 
+    ================================================== -->
+  <header>
+    <div class="row">
+      <div class="top-bar">
+        <a class="menu-toggle" href="#"><span>Menú</span></a>
+
+        <div class="logo">
+          <a href="index.html">x140l1n</a>
+        </div>
+
+        <nav id="main-nav-wrap">
+          <ul class="main-navigation">
+            <li class="current">
+              <a class="smoothscroll" href="#intro" title="">Portada</a>
+            </li>
+            <li>
+              <a class="smoothscroll" href="#about" title="">Sobre mí</a>
+            </li>
+            <li>
+              <a class="smoothscroll" href="#resume" title="">Resumen</a>
+            </li>
+            <li>
+              <a class="smoothscroll" href="#projects" title="">Proyectos</a>
+            </li>
+            <li>
+              <a class="smoothscroll" href="#contact" title="">Contacto</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <!-- /top-bar -->
+    </div>
+    <!-- /row -->
+  </header>
+  <!-- /header -->
+
+  <!-- intro section
+    ================================================== -->
+  <section id="intro">
+    <div class="intro-overlay"></div>
+
+    <div class="intro-content">
+      <div class="row">
+        <div class="col-twelve">
+          <h5>{ Hello, World. }</h5>
+          <h1>Xiaolin Jin Lin</h1>
+
+          <p class="intro-position">
+            <span>Desarrollador software</span>
+            <span>Web y Multiplataforma</span>
+          </p>
+
+          <a class="button stroke smoothscroll" href="#about" title="">Más sobre mi</a>
+        </div>
+      </div>
+    </div>
+    <!-- /intro-content -->
+
+    <ul class="intro-social">
+      <li>
+        <a href="https://github.com/x140l1n" target="_blank"><i class="fa fa-github"></i></a>
+      </li>
+      <li>
+        <a href="https://www.linkedin.com/in/xiaolin-jin-lin-017287173/" target="_blank"><i
+            class="fa fa-linkedin"></i></a>
+      </li>
+      <li>
+        <a href="https://www.instagram.com/x140l1n/" target="_blank"><i class="fa fa-instagram"></i></a>
+      </li>
+    </ul>
+    <!-- /intro-social -->
+  </section>
+  <!-- /intro -->
+
+  <!-- about section
+    ================================================== -->
+  <section id="about">
+    <div class="row section-intro">
+      <div class="col-twelve">
+        <h5>Sobre mí</h5>
+
+        <div class="intro-info">
+          <img src="images/profile.jpg" alt="Profile Picture" />
+
+          <p class="lead">
+            Me llamo Xiaolin Jin Lin y tengo <span id="age"></span> años. A
+            los 19 años decidí a adentrarme en el mundo de la informática y
+            escogí la rama de programación. <br />Hasta ahora he aprendido
+            mucho, y cada vez me gusta más este mundo. <br /><br />
+            Soy muy trabajador y disciplinado al haber tenido 5 años de
+            experiencia con el baile.
+            <br /><br />
+            Me siento cómodo trabajar en equipo, ofreciendo ideas y soluciones
+            efectivas para el proyecto. A la vez me gusta compartir
+            experiencias y conocimientos con otras personas.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- /section-intro -->
+
+    <div class="row about-content">
+      <div class="col-twelve tab-full">
+        <h2>Otros datos</h2>
+        <ul class="info-list">
+          <li>
+            <strong>Idiomas:</strong>
+            <p>Castellano (Nativo), Catalán (Nativo), Inglés (Básico), Chino (Medio).</p>
+          </li>
+          <li>
+            <strong>Hobbies:</strong>
+            <p>Baile (Danza urbana).</p>
+          </li>
+        </ul>
+        <!-- /info-list -->
+      </div>
+
+      <div class="col-twelve tab-full">
+        <h2>Lenguajes</h2>
+        <ul class="skill-bars" id="languages-container"></ul>
+        <!-- /skill-bars -->
+      </div>
+
+      <div class="col-twelve tab-full">
+        <h2>Frameworks</h2>
+        <ul class="skill-bars" id="frameworks-container"></ul>
+        <!-- /skill-bars -->
+      </div>
+
+      <div class="col-twelve tab-full">
+        <h2>Gestor base de datos</h2>
+        <ul class="skill-bars" id="databases-container"></ul>
+        <!-- /skill-bars -->
+      </div>
+
+      <div class="col-twelve tab-full">
+        <h2>Otros</h2>
+        <ul class="skill-bars" id="others-container"></ul>
+        <!-- /skill-bars -->
+      </div>
+    </div>
+
+    <div class="row button-section">
+      <div class="col-twelve">
+        <a href="#contact" title="Contáctame" class="button stroke smoothscroll">Contáctame</a>
+        <!--<a href="#" title="Descargar CV" class="button button-primary"
+              >Descargar CV</a
+            >-->
+      </div>
+    </div>
+  </section>
+  <!-- /process-->
+
+  <!-- resume Section
+    ================================================== -->
+  <section id="resume" class="grey-section">
+    <div class="row section-intro">
+      <div class="col-twelve">
+        <h5>Resumen</h5>
+        <h1>Estudios / Experiencias laboral</h1>
+      </div>
+    </div>
+    <!-- /section-intro-->
+
+    <div class="row resume-timeline">
+      <div class="col-twelve resume-header">
+        <h2>Estudios</h2>
+      </div>
+      <!-- /resume-header -->
+
+      <div class="col-twelve">
+        <div class="timeline-wrap" id="studies">
+
+        </div>
+        <!-- /timeline-wrap -->
+      </div>
+      <!-- /col-twelve -->
+    </div>
+    <!-- /resume-timeline -->
+
+    <div class="row resume-timeline">
+      <div class="col-twelve resume-header">
+        <h2>Experiencias laboral</h2>
+      </div>
+      <!-- /resume-header -->
+
+      <div class="col-twelve">
+        <div class="timeline-wrap" id="work-experiences">
+
+        </div>
+        <!-- /timeline-wrap -->
+      </div>
+      <!-- /col-twelve -->
+    </div>
+    <!-- /resume-timeline -->
+
+  </section>
+  <!-- /features -->
+
+  <!-- Projects Section
+    ================================================== -->
+  <section id="projects">
+    <div class="row section-intro">
+      <div class="col-twelve">
+        <h5>Proyectos</h5>
+        <h1>Echa un vistazo a mis proyectos</h1>
+      </div>
+    </div>
+    <!-- /section-intro-->
+
+    <div class="row projects-content">
+      <div class="col-twelve">
+        <!-- projects-wrapper -->
+        <div id="folio-wrapper" class="block-1-2 block-mob-full stack">
+          <div class="bgrid folio-item">
+            <div class="item-wrap">
+              <img src="images/projects/ecoarts/index.jpg" alt="Ecoarts" />
+              <a href="#modal-ecoarts" class="overlay">
+                <div class="folio-item-table">
+                  <div class="folio-item-cell">
+                    <h3 class="folio-title">Ecoarts</h3>
+                    <span class="folio-types">Java | .Net | JSON</span>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <!-- /folio-item -->
+
+          <div class="bgrid folio-item">
+            <div class="item-wrap">
+              <img src="images/projects/chrysallis/index.jpg" alt="Chrysallis" />
+              <a href="#modal-chrysallis" class="overlay">
+                <div class="folio-item-table">
+                  <div class="folio-item-cell">
+                    <h3 class="folio-title">Chrysallis</h3>
+                    <span class="folio-types">Java | .Net | ADO.NET | SQL Server</span>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <!-- /folio-item -->
+
+          <div class="bgrid folio-item">
+            <div class="item-wrap">
+              <img src="images/projects/spaceinvaders/index.jpg" alt="Space invaders" />
+              <a href="#modal-spaceinvaders" class="overlay">
+                <div class="folio-item-table">
+                  <div class="folio-item-cell">
+                    <h3 class="folio-title">Space invaders</h3>
+                    <span class="folio-types">Java | LIBGDX</span>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <!-- /folio-item -->
+
+          <!-- modal popups - begin
+                ============================================================= -->
+          <div id="modal-ecoarts" class="popup-modal slider mfp-hide">
+            <div class="media">
+              <img src="images/projects/ecoarts/logo_ecoarts.png" alt="Ecoarts logo" />
+            </div>
+
+            <div class="description-box">
+              <h4>Ecoarts</h4>
+              <p>
+                Ecoarts es un juego de trivia sobre el medio ambiente para niños.<br />
+                El objetivo del juego es ayudar a los niños a comprender la importancia
+                de cuidar el medio ambiente de una forma divertida y entretenida.<br /><br />
+                El jugador tiene que recorrer un mapa donde cada punto hay un monstruo, y para
+                derrotarlo tendrá que responder las preguntas de manera correcta. <br />
+                ¡OJO, si respondes mal, se te quitará una vida!<br /><br />
+                El proyecto consta de 2 partes: escritorio y android.<br /><br />
+                La parte de escritorio es donde gestionaremos las preguntas y los personajes del juego.<br />
+                La parte de android es el juego en sí.<br /><br />
+
+                Si quieres saber más sobre este proyecto haz clic en los siguientes enlaces:
+
+              <ul>
+                <li><a href="https://github.com/x140l1n/ECOARTS-ANDROID" target="_blank">Ecoarts android GitHub</a></li>
+                <li><a href="https://github.com/x140l1n/ECOARTS-DESKTOP" target="_blank">Ecoarts escritorio GitHub</a>
+                </li>
+                <li><a href="https://www.youtube.com/watch?v=wfosd7CLt9s" target="_blank">Ecoarts android vídeo</a></li>
+                <li><a href="https://www.youtube.com/watch?v=b-FnBSv8TRY" target="_blank">Ecoarts escritorio vídeo</a>
+                </li>
+              </ul>
+              </p>
+
+              <div class="categories">Java | .Net | JSON</div>
+            </div>
+
+            <div class="link-box">
+              <a href="#" class="popup-modal-dismiss">Cerrar</a>
+            </div>
+          </div>
+          <!-- /modal-ecoarts -->
+
+          <div id="modal-chrysallis" class="popup-modal slider mfp-hide">
+            <div class="media">
+              <img src="images/projects/chrysallis/logo.png" alt="Chrysallis logo" />
+            </div>
+
+            <div class="description-box">
+              <h4>Chrysallis</h4>
+              <p>
+                Chrysallis es una ONG que ayuda a familias de niños y adolescentes transexuales.<br />
+                Este proyecto se ha creado para ayudarles a gestionar eventos sociales de la asociación.<br /><br />
+                El proyecto consta de 2 partes: escritorio y android.<br /><br />
+                La parte de escritorio es donde van a gestionar los socios y los eventos de la asociación.<br />
+                La parte de android lo usarán los socios donde podrán consultar y apuntarse a eventos.<br /><br />
+
+                <strong>Proyecto actualmente utilizado por el cliente.</strong><br /><br />
+
+                Si quieres saber más sobre este proyecto haz clic en los siguientes enlaces:
+
+              <ul>
+                <li><a href="https://www.youtube.com/watch?v=O_hz8wCR060" target="_blank">Chrysallis android vídeo</a>
+                </li>
+                <li><a href="https://www.youtube.com/watch?v=l6Po2-P1JEg" target="_blank">Chrysallis escritorio
+                    vídeo</a></li>
+              </ul>
+              </p>
+
+              <div class="categories">Java | .Net | ADO.NET | SQL Server</div>
+            </div>
+
+            <div class="link-box">
+              <a href="#" class="popup-modal-dismiss">Cerrar</a>
+            </div>
+          </div>
+          <!-- /modal-02 -->
+
+          <div id="modal-spaceinvaders" class="popup-modal slider mfp-hide">
+            <div class="media">
+              <img src="images/projects/spaceinvaders/logo.png" alt="Space invaders logo" />
+            </div>
+
+            <div class="description-box">
+              <h4>Space invaders</h4>
+              <p>
+                Juego de batallas de naves creado por mí usando la librería libGDX.<br /><br />
+                El juego es compatible con Android y Windows.<br /><br />
+                Si quieres saber más sobre este proyecto haz clic en los siguientes enlaces:
+
+              <ul>
+                <li><a href="https://github.com/x140l1n/SPACE-INVADERS-GDX" target="_blank">Space invaders GitHub</a>
+                </li>
+                <li><a href="https://www.youtube.com/watch?v=LxX2LFaD8xw" target="_blank">Space invaders vídeo</a></li>
+              </ul>
+              </p>
+
+              <div class="categories">Java | LIBGDX</div>
+            </div>
+
+            <div class="link-box">
+              <a href="#" class="popup-modal-dismiss">Cerrar</a>
+            </div>
+          </div>
+          <!-- /modal-03 -->
+
+          <!-- modal popups - end
+                ============================================================= -->
+        </div>
+        <!-- /projects-wrapper -->
+      </div>
+      <!-- /twelve -->
+    </div>
+    <!-- /projects-content -->
+  </section>
+  <!-- /projects -->
+
+  <!--
+      <section id="services">
+        <div class="overlay"></div>
+
+        <div class="row section-intro">
+          <div class="col-twelve">
+            <h5>Services</h5>
+            <h1>What Can I Do For You?</h1>
+
+            <p class="lead">
+              Lorem ipsum Do commodo in proident enim in dolor cupidatat
+              adipisicing dolore officia nisi aliqua incididunt Ut veniam lorem
+              ipsum Consectetur ut in in eu do.
+            </p>
+          </div>
+        </div>
+        <div class="row services-content">
+          <div id="owl-slider" class="owl-carousel services-list">
+            <div class="service">
+              <span class="icon"><i class="icon-earth"></i></span>
+
+              <div class="service-content">
+                <h3>Webdesign</h3>
+
+                <p class="desc">
+                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                  accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+                  quae ab illo inventore veritatis et quasi architecto beatae
+                  vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia
+                  voluptas sit aspernatur aut odit aut fugit.
+                </p>
+              </div>
+            </div>
+
+            <div class="service">
+              <span class="icon"><i class="icon-window"></i></span>
+
+              <div class="service-content">
+                <h3>Web Development</h3>
+
+                <p class="desc">
+                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                  accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+                  quae ab illo inventore veritatis et quasi architecto beatae
+                  vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia
+                  voluptas sit aspernatur aut odit aut fugit.
+                </p>
+              </div>
+            </div>
+
+            <div class="service">
+              <span class="icon"><i class="icon-paint-brush"></i></span>
+
+              <div class="service-content">
+                <h3>Branding</h3>
+
+                <p class="desc">
+                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                  accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+                  quae ab illo inventore veritatis et quasi architecto beatae
+                  vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia
+                  voluptas sit aspernatur aut odit aut fugit.
+                </p>
+              </div>
+            </div>
+
+            <div class="service">
+              <span class="icon"><i class="icon-toggles"></i></span>
+
+              <div class="service-content">
+                <h3>UI/UX Design</h3>
+
+                <p class="desc">
+                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                  accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+                  quae ab illo inventore veritatis et quasi architecto beatae
+                  vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia
+                  voluptas sit aspernatur aut odit aut fugit.
+                </p>
+              </div>
+            </div>
+
+            <div class="service">
+              <span class="icon"><i class="icon-image"></i></span>
+
+              <div class="service-content">
+                <h3>Graphics Design</h3>
+
+                <p class="desc">
+                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                  accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+                  quae ab illo inventore veritatis et quasi architecto beatae
+                  vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia
+                  voluptas sit aspernatur aut odit aut fugit.
+                </p>
+              </div>
+            </div>
+
+            <div class="service">
+              <span class="icon"><i class="icon-chat"></i></span>
+
+              <div class="service-content">
+                <h3>Consultancy</h3>
+
+                <p class="desc">
+                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                  accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+                  quae ab illo inventore veritatis et quasi architecto beatae
+                  vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia
+                  voluptas sit aspernatur aut odit aut fugit.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    -->
+
+  <!-- 
+      <section id="stats" class="count-up">
+        <div class="row">
+          <div class="col-twelve">
+            <div
+              class="
+                block-1-6 block-s-1-3 block-tab-1-2 block-mob-full
+                stats-list
+              "
+            >
+              <div class="bgrid stat">
+                <div class="icon-part">
+                  <i class="icon-pencil-ruler"></i>
+                </div>
+
+                <h3 class="stat-count">1500</h3>
+
+                <h5 class="stat-title">Projects Completed</h5>
+              </div>
+
+              <div class="bgrid stat">
+                <div class="icon-part">
+                  <i class="icon-users"></i>
+                </div>
+
+                <h3 class="stat-count">900</h3>
+
+                <h5 class="stat-title">Happy Clients</h5>
+              </div>
+
+              <div class="bgrid stat">
+                <div class="icon-part">
+                  <i class="icon-badge"></i>
+                </div>
+
+                <h3 class="stat-count">200</h3>
+
+                <h5 class="stat-title">Awards Received</h5>
+              </div>
+
+              <div class="bgrid stat">
+                <div class="icon-part">
+                  <i class="icon-light-beb"></i>
+                </div>
+
+                <h3 class="stat-count">120</h3>
+
+                <h5 class="stat-title">Crazy Ideas</h5>
+              </div>
+
+              <div class="bgrid stat">
+                <div class="icon-part">
+                  <i class="icon-cup"></i>
+                </div>
+
+                <h3 class="stat-count">1500</h3>
+
+                <h5 class="stat-title">Coffee Cups</h5>
+              </div>
+
+              <div class="bgrid stat">
+                <div class="icon-part">
+                  <i class="icon-clock"></i>
+                </div>
+
+                <h3 class="stat-count">7200</h3>
+
+                <h5 class="stat-title">Hours</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      -->
+
+  <!-- contact
+    ================================================== -->
+  <section id="contact">
+    <div class="row section-intro">
+      <div class="col-twelve">
+        <h5>Contacto</h5>
+        <p class="lead">
+          ¡Si tienes alguna duda no dudes en contactarme!
+        </p>
+      </div>
+    </div>
+    <!-- /section-intro -->
+
+    <!--
+        <div class="row contact-form">
+          <div class="col-twelve">
+            <form name="contactForm" id="contactForm">
+              <fieldset>
+                <div class="form-field">
+                  <input
+                    name="contactName"
+                    type="text"
+                    id="contactName"
+                    placeholder="Nombre"
+                    value=""
+                    minlength="2"
+                    required=""
+                  />
+                </div>
+                <div class="form-field">
+                  <input
+                    name="contactEmail"
+                    type="email"
+                    id="contactEmail"
+                    placeholder="Email"
+                    value=""
+                    required=""
+                  />
+                </div>
+                <div class="form-field">
+                  <input
+                    name="contactSubject"
+                    type="text"
+                    id="contactSubject"
+                    placeholder="Asunto"
+                    value=""
+                  />
+                </div>
+                <div class="form-field">
+                  <textarea
+                    name="contactMessage"
+                    id="contactMessage"
+                    placeholder="Mensaje"
+                    rows="10"
+                    cols="50"
+                    required=""
+                  ></textarea>
+                </div>
+                <div class="form-field">
+                  <button class="submitform">Enviar</button>
+                  <div id="submit-loader">
+                    <div class="text-loader">Enviando...</div>
+                    <div class="s-loader">
+                      <div class="bounce1"></div>
+                      <div class="bounce2"></div>
+                      <div class="bounce3"></div>
+                    </div>
+                  </div>
+                </div>
+              </fieldset>
+            </form>
+
+            <div id="message-warning"></div>
+            <div id="message-success">
+              <i class="fa fa-check"></i>Tu mensaje se ha enviado correctamente. ¡Gracias!<br/>
+            </div>
+          </div>
+        </div>
+      -->
+
+    <div class="row contact-info">
+      <div class="col-six tab-full collapse">
+        <div class="icon">
+          <i class="icon-mail"></i>
+        </div>
+
+        <h5>Enviar un correo a</h5>
+
+        <p>
+          <a href="mailto:x140l1n@hotmail.com" class="contact">x140l1n@hotmail.com</a>
+        </p>
+      </div>
+
+      <div class="col-six tab-full">
+        <div class="icon">
+          <i class="icon-phone"></i>
+        </div>
+
+        <h5>Llámame a</h5>
+
+        <p>
+          <a href="tel:665836882" class="contact">(+34) 665-836-882</a>
+        </p>
+      </div>
+    </div>
+    <!-- /contact-info -->
+  </section>
+  <!-- /contact -->
+
+  <!-- footer
+    ================================================== -->
+
+  <footer>
+    <div class="row">
+      <div class="col-twelve tab-full social">
+        <ul class="footer-social">
+          <li>
+            <a href="https://github.com/x140l1n" target="_blank"><i class="fa fa-github"></i></a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/xiaolin-jin-lin-017287173/" target="_blank"><i
+                class="fa fa-linkedin"></i></a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/x140l1n/" target="_blank"><i class="fa fa-instagram"></i></a>
+          </li>
+        </ul>
+      </div>
+
+      <div id="go-top">
+        <a class="smoothscroll" title="Back to Top" href="#top"><i class="fa fa-long-arrow-up"></i></a>
+      </div>
+    </div>
+    <!-- /row -->
+  </footer>
+  <!--<div id="preloader"> 
+    	<div id="loader"></div>
+   </div> -->
+
+  <!-- Java Script
+   ================================================== -->
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-app.js"></script>
+
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+		https://firebase.google.com/docs/web/setup#available-libraries -->
+  <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-firestore.js"></script>
+
+  <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+      apiKey: "AIzaSyDoQalKQzIXHbApCS-jsNfDIaBDfNjUJpU",
+      authDomain: "portafolio-e479d.firebaseapp.com",
+      projectId: "portafolio-e479d",
+      storageBucket: "portafolio-e479d.appspot.com",
+      messagingSenderId: "810933369608",
+      appId: "1:810933369608:web:71adf3abe63bdc56b2cabd",
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+  </script>
+
+  <script src="js/jquery-2.1.3.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

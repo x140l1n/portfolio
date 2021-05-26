@@ -1,0 +1,84 @@
+.splash {
+  position: fixed;
+  display: grid;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: black;
+  z-index: 1000;
+  color: white;
+  align-items: center;
+}
+
+.splash.display-none {
+  position: fixed;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: black;
+  z-index: -1000;
+  color: white;
+  line-height: 90vh;
+  transition: all 1.5s;
+}
+
+.splash-line {
+  color: white;
+  white-space: nowrap;
+  overflow: hidden;
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 5px;
+  border-right: 4px solid rgba(255,255,255,.75);
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 0.5s ease-in forwards;
+}
+
+body.none-scroll {
+  overflow-y: hidden; /*hide vertical*/
+  overflow-x: hidden; /*hide horizontal*/
+}
+
+/* Animation */
+.anim-typewriter {
+  animation: typewriter 1.5s steps(44) 0.5s 1 normal both, blinkTextCursor 1000ms steps(44) infinite normal;
+}
+
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 6.7em;
+  }
+}
+
+@keyframes blinkTextCursor {
+  from {
+    border-right-color: rgba(255, 255, 255, 0.75) !important;
+  }
+  to {
+    border-right-color: transparent;
+  }
+}
+
+li {
+    text-align: justify;
+}
+
+.contact {
+  color: white;
+  text-decoration: underline;
+}
