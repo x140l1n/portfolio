@@ -1,27 +1,25 @@
-<script setup>
-import ScreenView from "./ScreenView.vue";
-</script>
-
 <script>
+import ScreenView from "./ScreenView.vue";
+
 export default {
+  components: {
+    ScreenView,
+  },
   mounted() {
     this.init();
   },
   data() {
     return {
-      isMonitorOn: false,
+      isMonitorOn: true,
     };
   },
   watch: {
-    isMonitorOn(newVal) {
-      console.log(this.$refs.screenView);
-      this.$refs.screenView.setStateScreen(newVal);
+    isMonitorOn() {
+      this.$refs.screenView.toggleScreen();
     },
   },
   methods: {
-    init() {
-
-    },
+    init() {},
   },
 };
 </script>
@@ -38,7 +36,7 @@ export default {
         <span
           role="button"
           :class="`rounded-circle btn-on-off d-flex ${
-            isMonitorOn ? 'btn-on' : 'btn-off'
+            !isMonitorOn ? 'btn-on' : 'btn-off'
           }`"
           @click="isMonitorOn = !isMonitorOn"
         >

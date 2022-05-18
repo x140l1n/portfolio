@@ -1,11 +1,9 @@
 <script setup>
-import ScreenView from "./views/MonitorView.vue";
+import MonitorView from "./views/MonitorView.vue";
 </script>
 
 <template>
-  <ScreenView />
+  <MonitorView />
 </template>
 
-<style>
-
-</style>
+<style></style>
